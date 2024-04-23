@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender and its Progression 
+                in Music</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace; /* Changes font to Lucida Console, Courier New */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #242424;
+            text-align: center;
+            background-color: #f1f3cf83; /* Light grey background color */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            color: navy;
+        }
+        p {
+            margin: 20px 0;
+        }
+        .highlight {
+            color: darkred;
+            font-weight: bold;
+        }
+        .article-title {
+            font-size: 48px;
+            color: darkblue;
+        }
+        .subheading {
+            font-size: 18px;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="article-title">Gender and its Progression in Music</h1>
+        <p>In this article, we have outlined the correlation between the gender (Male and Female) of Spotify artists and “Top Hit” songs from the years 1999-2020. Our findings showed a harsh decline over the years, most notably, in the production of songs by female artists. After analyzing our data which includes over 2000 artists, we discovered that in addition, the male artists producing songs in the “Top Hits” increased.</p>
+        <p>Since 1999 the world has gone through a massive shift in how we perceive gender. Feminist movements have arisen such as <span class="highlight">Me Too</span>, which have shone a spotlight on the disparities between gender equality. That being said, the numbers still show an uptick in male artists on Spotify as opposed to female artists. It should be noted, however, that this does not include popularity; Artists such as Taylor Swift and Beyonce have innumerable devoted fans, even though “Top Hits” written by female artists have decreased over the years.</p>
+        <p>Reasons for this can vary, and there is no singular answer to the rise of male artists in the “Top Hits”, but speculations can be swayed to suggest the continued bias in the music industry, favoring male artists. Now let us walk you through our results.</p>
+        <!-- Inserted iframe to display the graph -->
+        <iframe src="file:///C:/Users/user/OneDrive/Desktop/ENGPRJ/dygraph_artistcount.html" style="width:100%; height:600px; border:none;"></iframe>
+        <p>Above is a visual representation of the quantity of female vs. male musicians between the years 1999 and 2020. The blue columns reflect male artists, while the pink reflects female artists.</p>
+        <p>Let's now examine the Top 5 Genres from 1999-2020 and the number of female vs. male artists in each.</p>
+        <img src="C:\Users\user\OneDrive\Desktop\ENGW 371 Projecyt\genre_plot.png" alt="Sample Plot">
+        <p>The two genres with the largest disparities between the number of female and male artists are Pop, R&B and Hip-Hop, Pop.</p>
+        <p>Some reasons for these disparities point towards the stereotypical bias that Hip-Hop is a genre which requires more “masculine” qualities, such as intense beats, assertive vocals, and lyrics which can include sexual undertones. Whereas R&B has a more mellow tempo, includes soft and fluid vocals, and tempered beats. These are also adjectives which stereotypically have been attributed to “femininity”. </p>
+        <p>Next, we will show you the accumulated popularity trends by gender between 1999-2020. </p>
+        <img src="C:\Users\user\OneDrive\Desktop\ENGW 371 Projecyt\popularity_plot.gif" alt="Animated Graph of Popularity Trends by Gender">
+        <p>Opposed to the data reflecting the increase in male artists, we see an equal increase in the popularity of artists between both genders. Therefore, the quantity of top hits by women vs. men does not reflect the popularity trend.</p>
+    <p>One reason for this could be that popular female musicians typically have a large collection of dedicated fans, which is congruent with their upward trend. This means that only a handful of female artists are responsible for their gender’s upward trend in popularity. But if both female and male artists are trending upward in popularity, why is it that women are receiving fewer top hits?</p>
+    <p>It is possible that female artists don’t have the same opportunities in the studios, in media, or in marketing to have a multitude of followers in the same way that male artists do, leaving lesser-known female artists with fewer opportunities to gain popularity.</p>
+
+    <h2>METHODOLOGY</h2>
+    <p>The Spotify artists dataset was taken from the publicly available Kaggle article, Spotify Data Visualization. The code we used to analyze the dataset and translate it into our Pudding graphs is called R.</p>
+    <p>Our dataset included the name of the artist, their song, the year it was produced, popularity, danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, tempo, and genre. It did not, however, account for the artist’s gender. We had to manually insert this data into the code, which, for this reason, could have been subjected to errors.</p>
+    <p>When met with bands as opposed to singular artists, we labeled their gender based on the primary figure or lead singer that the band is most known for. We then began assembling the trends from the data into this Pudding article. Their genders were determined via Wikipedia, pictures, and names. Those who did not identify as male or female were classified in our research as X, and were not included in our study as our main objective was to find the discrepancies between male and female-identifying artists.</p>
+    </div>
+</body>
+</html>
